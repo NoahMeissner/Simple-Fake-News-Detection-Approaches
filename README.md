@@ -1,4 +1,4 @@
-# FakeNewsDetectionPipeline
+# Simple-Fake-News-Detection-Approaches
 
 ### Abstract
 Fake news is a major threat to social media and internet users today. Therefore, there are different ways to filter and analyse them.

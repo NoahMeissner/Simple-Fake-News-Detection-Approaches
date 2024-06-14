@@ -6,7 +6,7 @@ For this reason, we use simple text classification methods to see how well they 
 
 We use the data set from the repo: https://github.com/KaiDMML/FakeNewsNet/tree/master?tab=readme-ov-file
 
-### Ablauf
+### Procedure
 
 First, we perform a simple data analysis in Jupyter Notebook Analysis.ipynb to familiarise ourselves with the data.
 Later, we find a DistilBert and a Bert Base Uncased Model and compare the results with each other.

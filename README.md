@@ -15,6 +15,9 @@ We begin by performing a preliminary data analysis in the Jupyter Notebook Analy
 #### 2. Topic Modelling
 To gain insights into the topics within the dataset, we conduct topic modelling. This helps us understand the content and thematic distribution of the tweets, identifying key topics that may be indicative of fake news.
 
+<img src="Pictures/example_plot_seaborn.png" width=50% height=50%>
+
+
 #### 3. Model Selection and Comparison
 We employ two models for text classification:
 

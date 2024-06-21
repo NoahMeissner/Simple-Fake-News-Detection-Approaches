@@ -1,4 +1,8 @@
 # Simple Fake News Detection Approaches
+[![GitHub Repository 1](https://img.shields.io/badge/GitHub-Explore%20the%20Code-blue?logo=github)](https://github.com/NoahMeissner/Simple-Fake-News-Detection-Approaches)
+
+
+
 ### Abstract
 Fake news poses a significant threat to social media and internet users today. To combat this, we explore simple text classification methods to detect 'fake news' using a dataset comprising 134,198 tweets. Our goal is to evaluate the effectiveness of these methods and provide insights into their performance on a large, balanced dataset.
 
@@ -11,6 +15,9 @@ We begin by performing a preliminary data analysis in the Jupyter Notebook Analy
 #### 2. Topic Modelling
 To gain insights into the topics within the dataset, we conduct topic modelling. This helps us understand the content and thematic distribution of the tweets, identifying key topics that may be indicative of fake news.
 
+<img src="Pictures/example_plot_seaborn.png" width=50% height=50%>
+
+
 #### 3. Model Selection and Comparison
 We employ two models for text classification:
 
@@ -19,6 +26,9 @@ We employ two models for text classification:
 We train and evaluate both models, comparing their performance in detecting fake news.
 
 ### Results
+
+
+
 The analysis reveals that the majority of fake news originates from a specific topic group, suggesting a lack of generalizability across different topics. Despite this, the dataset's large size and balanced nature contribute to a high average precision of approximately 99.62%, demonstrating excellent model performance for this specific use case.
 
 This repository illustrates a straightforward approach to utilizing pre-trained models for text classification. It also highlights the impact of various parameters on model performance, offering valuable insights for future applications in fake news detection.

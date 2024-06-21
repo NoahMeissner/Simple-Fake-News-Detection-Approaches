@@ -1,21 +1,34 @@
-# Simple-Fake-News-Detection-Approaches
-
+# Simple Fake News Detection Approaches
 ### Abstract
-Fake news is a major threat to social media and internet users today. Therefore, there are different ways to filter and analyse them.
-For this reason, we use simple text classification methods to see how well they can detect 'fake news' using the small dataset.
+Fake news poses a significant threat to social media and internet users today. To combat this, we explore simple text classification methods to detect 'fake news' using a dataset comprising 134,198 tweets. Our goal is to evaluate the effectiveness of these methods and provide insights into their performance on a large, balanced dataset.
 
-We use the data set from the repo: https://github.com/KaiDMML/FakeNewsNet/tree/master?tab=readme-ov-file
+We utilize the dataset from the repository: TruthSeeker-2023, which offers a substantial volume of data for robust analysis and model training.
 
 ### Procedure
+#### 1. Data Analysis
+We begin by performing a preliminary data analysis in the Jupyter Notebook Analysis.ipynb. This step is crucial for familiarizing ourselves with the dataset and understanding its structure and characteristics. We explore various statistical properties and visualize the distribution of fake and real news.
 
-First, we perform a simple data analysis in Jupyter Notebook Analysis.ipynb to familiarise ourselves with the data.
-Later, we find a DistilBert and a Bert Base Uncased Model and compare the results with each other.
+#### 2. Topic Modelling
+To gain insights into the topics within the dataset, we conduct topic modelling. This helps us understand the content and thematic distribution of the tweets, identifying key topics that may be indicative of fake news.
+
+#### 3. Model Selection and Comparison
+We employ two models for text classification:
+
+- DistilBERT: A distilled version of BERT that balances performance and efficiency.
+- BERT Base Uncased: A base version of BERT that provides a comprehensive approach to text understanding.
+We train and evaluate both models, comparing their performance in detecting fake news.
 
 ### Results
+The analysis reveals that the majority of fake news originates from a specific topic group, suggesting a lack of generalizability across different topics. Despite this, the dataset's large size and balanced nature contribute to a high average precision of approximately 99.62%, demonstrating excellent model performance for this specific use case.
 
-The analysis shows that the existing fake news mainly originates from one topic group. This means that we cannot generalise for other groups.
-Furthermore, the data set is very small (20,000 data points) and unbalanced, which was taken into account when training the model. Therefore, the average precisions of approx. 83-85% 
-are not particularly high.
+This repository illustrates a straightforward approach to utilizing pre-trained models for text classification. It also highlights the impact of various parameters on model performance, offering valuable insights for future applications in fake news detection.
 
-However, the repository shows a simple way of using finger-tuned models for text classification and the effects of various parameters on the performance of these models.
-of these models.
+
+### Clone Repository
+```
+git clone https://github.com/NoahMeissner/Simple-Fake-News-Detection-Approaches.git
+cd Simple-Fake-News-Detection-Approaches
+```
+
+### Conclusion
+This project demonstrates the effectiveness of simple text classification methods in detecting fake news using a large, balanced dataset. The high precision achieved highlights the potential of these models for practical applications in real-world scenarios. Future work could focus on improving the generalizability of these models across different topics and datasets.
